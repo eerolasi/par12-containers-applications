@@ -1,0 +1,17 @@
+Script started on Mon Jul 22 12:24:01 2024
+%                                                                                                                                      
+(base) sirueerola@Siru-MBP part12-containers-applications % docker run -it ubuntu bash
+
+root@eee72ab34a23:/# mkdir usr/src/app
+
+root@eee72ab34a23:/# touch /usr/src/app/index.js
+
+root@eee72ab34a23:/# exit
+
+exit
+%                                                                                                                                      
+
+(base) sirueerola@Siru-MBP part12-containers-applications % exit
+
+
+Script done on Mon Jul 22 12:24:36 2024

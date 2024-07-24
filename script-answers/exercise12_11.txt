@@ -1,0 +1,31 @@
+Script started on Mon Jul 22 18:25:02 2024
+(base) sirueerola@Siru-MBP todo-backend % docker exec -it todo-backend-redis-1 bash
+root@64f789512686:/data# redis-cli
+127.0.0.1:6379> KEYS *
+1) "added_todos"
+127.0.0.1:6379> GET added_todos
+"1"
+127.0.0.1:6379> SET added_todos 9001
+OK
+127.0.0.1:6379> GET added_todos
+"9001"
+127.0.0.1:6379> KEYS *
+1) "added_todos"
+127.0.0.1:6379> GET added_todos
+"9002"
+127.0.0.1:6379> DEL added_todos
+(integer) 1
+127.0.0.1:6379> GET added_todos
+(nil)
+127.0.0.1:6379> GET added_todos
+"1"
+127.0.0.1:6379> exit
+root@64f789512686:/data# exit
+exit
+
+What's next:
+    Try Docker Debug for seamless, persistent debugging tools in any container or image → docker debug todo-backend-redis-1
+    Learn more at https://docs.docker.com/go/debug-cli/
+(base) sirueerola@Siru-MBP todo-backend % exit
+
+Script done on Mon Jul 22 18:28:53 2024
